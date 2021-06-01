@@ -1,0 +1,17 @@
+.content-item{
+    margin-top: 170px;
+}
+.bg-row{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.bg-item{
+    background-color: #F5EBD0;
+    border-radius: 10px;
+}
+.estimasi{
+    color: #066A04;
+}
+.bg-dropdown{
+    background-color: #B68C3F;
+}
