@@ -67,4 +67,10 @@
 .bg-dropdown{
     background-color: #B68C3F;
 }
+#bg-item{
+    width: 170px;
+    background-color: #F5EBD0;
+    border-radius: 10px;
+    margin: 7px;
+}
 
