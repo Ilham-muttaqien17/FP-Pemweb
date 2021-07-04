@@ -43,3 +43,30 @@
     overflow: hidden; 
     white-space: nowrap;
 }
+
+.filterButton{
+    border: 1px solid lightgray;
+    border-radius: 20px;
+    display: block;
+    color: gray;
+    margin-top: 10px;
+    margin-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.filterButton:focus{
+    border: 1px solid lightsalmon;
+    outline: none;
+    border-radius: 20px;
+    color: lightsalmon;
+    margin-top: 10px;
+    margin-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+

@@ -419,6 +419,27 @@
         </div>
     </div>
     
+    <script>
+        new Glider(document.querySelector('.glider'), {
+            slidesToShow: 5,
+            dots: '#dots',
+            arrows: {
+                prev: '.glider-prev',
+                next: '.glider-next'
+            }
+        });
+
+        new Glider(document.querySelector('.glider-1'), {
+            slidesToShow: 5,
+            dots: '#dots',
+            arrows: {
+                prev: '.glider-prev-1',
+                next: '.glider-next-1'
+            }
+        });
+
+
+    </script>
    
     <hr>
     <!--Footer-->
@@ -572,27 +593,7 @@
     <script src="js/Chat.js"></script>
     <script src="js/app.js"></script>
 
-    <script>
-        new Glider(document.querySelector('.glider'), {
-            slidesToShow: 5,
-            dots: '#dots',
-            arrows: {
-                prev: '.glider-prev',
-                next: '.glider-next'
-            }
-        });
-
-        new Glider(document.querySelector('.glider-1'), {
-            slidesToShow: 5,
-            dots: '#dots',
-            arrows: {
-                prev: '.glider-prev-1',
-                next: '.glider-next-1'
-            }
-        });
-
-
-    </script>
+    
     
 </body>
 </html>

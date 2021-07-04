@@ -104,14 +104,57 @@
     <div class="container bg-white content-item">
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb" class="bg-white">
-              <li class="breadcrumb-item"><a class="primary-color" href="#">Home</a></li>
+              <li class="breadcrumb-item"><a class="primary-color" href="../../Index.html">Home</a></li>
               <li class="breadcrumb-item active" aria-current="page">Lampu</li>
             </ol>
         </nav>
         <h3>Lampu Terbaik</h3>
         <div class="row bg-row">
             <div class="col">
-                <p>Filter</p>
+                <button class="btn btn-secondary" data-toggle="modal" data-target="#filterModal">
+                    <img src="../../assets/filter.svg" alt="">
+                    Filter
+                </button>
+
+                <!-- Modal Filter -->
+                <div class="modal fade" id="filterModal" tabindex="-1" role="dialog" aria-labelledby="filterModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <h5 class="modal-title" id="filterModalLabel">Filter</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            </div>
+                            <div class="modal-body">
+                                <div>
+                                    <h6 class="font-weight-bold">Urutkan</h6>
+                                    <div class="row ml-1">
+                                        <button class="filterButton">Paling Sesuai</button>
+                                        <button class="filterButton">Diskon Terbesar</button>
+                                        <button class="filterButton">Harga Terendah</button>
+                                        <button class="filterButton">Harga Tertinggi</button>
+                                        <button class="filterButton">Sisa Stok Banyak</button>
+                                    </div>
+                                </div>
+                                <div class="mt-4">
+                                    <h6 class="font-weight-bold">Harga</h6>
+                                    <div class="row ml-1">
+                                        <button class="filterButton">Kurang dari 25rb</button>
+                                        <button class="filterButton">25rb - 50rb</button>
+                                        <button class="filterButton">50rb - 100rb</button>
+                                        <button class="filterButton">100rb - 200rb</button>
+                                        <button class="filterButton">Di atas 200rb</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary">Gunakan</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
             <div class="card" id="bg-item">
                 <img class="card-img-top" src="../../assets/img/dekorasi/lampu/lampu 1.jpg">
