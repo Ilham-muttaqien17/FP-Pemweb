@@ -1,10 +1,20 @@
 .content-item{
     margin-top: 170px;
 }
-
+.bg-row{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
 .primary-color{
     color: #B68C3F;
     
+}
+.estimasi{
+    color: #066A04;
+    font-size: 12px;
+}
+.bg-dropdown{
+    background-color: #B68C3F;
 }
 
 .btn-troli{
@@ -27,7 +37,7 @@
 }
 
 .judul{
-    background-image: url(../../../assets/00.jpg);
+    background-image: url(../../assets/00.jpg);
     height: 250px;
     padding-top: 40px;
     color: whitesmoke;
@@ -39,7 +49,7 @@
 }
 
 .hiring{
-    background-image: url(../../../assets/karir/background.jpg);
+    background-image: url(../../assets/karir/background.jpg);
     height: 250px;
     padding-top: 40px;
     color: black;
