@@ -5,29 +5,29 @@ $(document).ready(function() {
   })
 });
 
-var email = document.getElementById('email')
-  email.oninvalid = function(e) {
-    e.target.setCustomValidity("");
-    if (!e.target.validity.valid) {
-      if (e.target.value.length == 0) {
-      e.target.setCustomValidity("Email is required.");
-    } else if (e.target.value.length < 5) {
-      e.target.setCustomValidity("Email not available");
-    }
-  }
-};
+// var email = document.getElementById('email')
+//   email.oninvalid = function(e) {
+//     e.target.setCustomValidity("");
+//     if (!e.target.validity.valid) {
+//       if (e.target.value.length == 0) {
+//       e.target.setCustomValidity("Email is required.");
+//     } else if (e.target.value.length < 5) {
+//       e.target.setCustomValidity("Email not available");
+//     }
+//   }
+// };
 
-var password = document.getElementById('passLogin')
-  password.oninvalid = function(e) {
-    e.target.setCustomValidity("");
-    if (!e.target.validity.valid) {
-      if (e.target.value.length == 0) {
-      e.target.setCustomValidity("Password is required.");
-    } else if (e.target.value.length < 5) {
-      e.target.setCustomValidity("Contact name must be at least 5 characters.");
-    }
-  }
-};
+// var password = document.getElementById('passLogin')
+//   password.oninvalid = function(e) {
+//     e.target.setCustomValidity("");
+//     if (!e.target.validity.valid) {
+//       if (e.target.value.length == 0) {
+//       e.target.setCustomValidity("Password is required.");
+//     } else if (e.target.value.length < 5) {
+//       e.target.setCustomValidity("Contact name must be at least 5 characters.");
+//     }
+//   }
+// };
 
 
 $(document).ready(function(){
