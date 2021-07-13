@@ -12,6 +12,9 @@
     <script script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../../../style.css">
     <link rel="stylesheet" href="style.css">
+        <!-- login -->
+    <link rel="stylesheet" href="../../../css/styleLogin.css">
+    <script defer src="../../../js/scriptLog.js"></script>
 
 </head>
 <body>
@@ -37,8 +40,53 @@
                     <td>
                         <div class="vertical-line mt-3"></div>
                     </td>
-                    <td><button type="button" class="btn btn-light mt-3">Masuk</button></td>
-                    <td><button type="button" class="btn btn-secondary mt-3">Daftar</button></td>
+                    <td><button type="button" class="btn btn-light mt-3 " data-toggle="modal" data-target="#loginForm">Masuk</button></td>
+                    <!--Login -->
+        
+                    <div class="modal fade" id="loginForm" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header border-bottom-0">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="form-tittle mb-4">
+                                        <h4>Masuk</h4>
+                                    </div>
+                                    <div class="d-flex flex-column">
+                                        <div id="error" class=" error_message text-white pl-2"></div>
+                                        <form id='form' action="/Index.html" method="GET">
+                                            <div class="form-group">
+                                                    <label for="email" class="text-muted">Email</label>
+                                                    <input type="email" class="form-control" id="email" required>
+                                                    <span id="emailMsg"></span>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="password" class="text-muted">Password</label>
+                                                <input type="password" class="form-control" id="passLogin" required>
+                                                <span id="passMsg"></span>
+                                            </div>
+                                            
+                                            <button class="btn text-white" style="width: 9em;" id="btnLogin1">Masuk</button>
+                                        </form> 
+                                        <br>
+                                        <div class="text-center ">atau masuk dengan</div>
+                                        <div class="d-flex justify-content-center">  
+                                            <input type="image" class="btn" height="40" data-placement="button" href="#" data-toggle="tooltip" title="Google" src="/assets/google.png">
+                                            <input type="image" class="btn" height="40" data-placement="button" href="#" data-toggle="tooltip" title="Facebook" src="/assets/facebook.png"> 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer justify-content-center">
+                                    <div class="signup-section">Belum punya akun? <a href="../../Daftar.html" class="regText" id="sign">Daftar</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <td><a href="../../Daftar.html"><button type="button" class="btn btn-secondary mt-3">Daftar</button></a></td>
                 </tr>
                 <tr>
                     <td>
