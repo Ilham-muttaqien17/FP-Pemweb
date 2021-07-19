@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="style.css">
         <!-- login -->
     <link rel="stylesheet" href="../../../css/styleLogin.css">
-    <script src="../../../js/scriptLog.js"></script>
+    <script defer src="../../../js/scriptLog.js"></script>
     
 
 </head>
@@ -184,7 +184,7 @@
             </ul>
 
             <button type="submit" class="btn mb-4" id="applynow" style="background-color: rgb(255, 166, 0);">Apply Now</button>
-            <form class="mb-3" id="form">
+            <form class="mb-3" id="form1">
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
                       <span class="input-group-text">Apply With Resume</span>
@@ -243,17 +243,17 @@
     <!-- script -->
     <script>
         $(document).ready(function(){
-            $("#form").hide();
+            $("#form1").hide();
             $("#notif").hide();
             $("#applied").hide();
             $("#applynow").click(function(){
                 $("#notif").hide();
-                $("#form").fadeIn();
+                $("#form1").fadeIn();
                 $("#applied").fadeIn();
             })
             $("#applied").click(function(){
                 $("#applied").hide();
-                $("#form").hide();
+                $("#form1").hide();
                 $("#notif").fadeIn();
             })
             
